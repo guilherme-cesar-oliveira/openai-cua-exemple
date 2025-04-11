@@ -24,9 +24,11 @@ npm install
 
 3. Configure suas variáveis de ambiente:
    - Crie um arquivo `.env` na raiz do projeto
-   - Adicione sua chave da OpenAI:
+   - Adicione as seguintes configurações:
    ```
    OPENAI_API_KEY=sua_chave_aqui
+   display_width=800
+   display_height=600
    ```
    - Configure o prompt desejado no mesmo arquivo
 
@@ -35,13 +37,16 @@ npm install
 Para iniciar o CUA, execute o seguinte comando no terminal:
 
 ```bash
-node run app.mjs
+node app.mjs
 ```
 
 ## Personalização
 
 Você pode personalizar o comportamento do CUA editando:
-- O arquivo `.env` para configurar o prompt e a chave da API
+- O arquivo `.env` para configurar:
+  - A chave da API da OpenAI
+  - As dimensões da tela (display_width e display_height)
+  - O prompt desejado
 - O arquivo `app.mjs` para modificar a lógica do programa
 
 ## Suporte

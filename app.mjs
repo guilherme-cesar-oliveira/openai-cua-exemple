@@ -9,8 +9,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const display_width = process.env.display_width;
-const display_height = process.env.display_height;
+const display_width = Number(process.env.display_width);
+const display_height = Number(process.env.display_height);
 const initial_url = process.env.initial_url;
 const new_tab_url = process.env.new_tab_url;
 const initial_text = process.env.initial_text;
